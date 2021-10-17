@@ -43,3 +43,30 @@ bool areSimilar(vector<int> a, vector<int> b) {
     
     return similar;
 }
+
+
+
+//BETTER SOLUTION WITH SMALLER RUN_TIME
+//CREDIT TO RicheyHans: https://github.com/RicheyHans/-JAVA-algorithm/blob/master/codefights/areSimilar.java
+bool areSimilar(vector<int> a, vector<int> b) {
+    
+    bool similar = false;
+    int count = 0;
+
+    for (int i = 0; i < a.size(); i++) {
+        if (a[i] != b[i]) {
+            count++;
+        }
+    }
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+
+    if (a == b) {
+        if (count <= 2) {
+            similar = true;
+        }
+    }
+
+    
+    return similar;
+}
