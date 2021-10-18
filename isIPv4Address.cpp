@@ -59,7 +59,7 @@ bool isIPv4Address(string inputString) {
     //we can check for valid values of the integers
     //let's store the indeces at which there are dots in a vector
     vector<int>indeces_dots;
-    //we will include 0 for utility puposes
+    //we will include 0 for utility purposes
     indeces_dots.push_back(0);
     for (int i = 0; i < size; i++) {
         if (inputString[i] == '.') {
