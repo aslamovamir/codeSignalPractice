@@ -16,6 +16,11 @@
 
 // There is no first number.
 
+#include <cstdlib>
+#include <stdio.h>
+#include <ctype.h>
+using namespace std;
+
 bool isIPv4Address(string inputString) {
     
     bool valid = true;
