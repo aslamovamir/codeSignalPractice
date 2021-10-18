@@ -11,14 +11,19 @@ int avoidObstacles(vector<int> inputArray) {
     //first we sort the array
     sort(inputArray.begin(), inputArray.end());
     //we need to jump thrugh the entire array, therefore
-    //we need to determine the lenght of thr path
+    //we need to determine the lenght of the path
     int largest_val = inputArray[0];
     for (int i = 0; i < inputArray.size(); i++) {
         if (largest_val < inputArray[i]) {
             largest_val = inputArray[i];
         }
     }
-    
+    //now we go through the path
+    //and keep a couter variable as current
+    //point in the path and add the min jump
+    //value to it each time, if we collide with
+    //one of the obstacles, we increment the jump value
+    //and restart the loop
     bool collided = false;
     int curr_point = 0;
     int min_jumps = 1; //smallest default
