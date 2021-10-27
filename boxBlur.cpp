@@ -39,7 +39,6 @@ vector<vector<int>> boxBlur(vector<vector<int>> image) {
                 }
             }
             blurImg[i].push_back(running_sum/9);
-            cout<<"SUM: "<<running_sum<<endl;
             running_sum = 0;
             index_r++;
         }
