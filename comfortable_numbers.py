@@ -19,11 +19,11 @@
 
 
 def solution(l, r):
-    # idea is to loop through all the number in the range from l to r
+    # idea is to loop through all the numbers in the range from l to r
     # and to keep record of the numbers each of the number within the range
     # is comfortable with. We will keep this record in a dictionary -
-    # - the keys will the the numbers from the range, and the values will be
-    # a list of numbers they are comfartble with
+    # - the keys will be the numbers from the range, and the values will be
+    # a list of numbers they are comfartble with;
     # to help with the identification of the list of comfortable numbers
     # we will create a helper function
     
