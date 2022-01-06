@@ -55,7 +55,7 @@ def solution(l, r):
     counter = 0
     for i in range(l, r + 1):
         for j in range (i + 1, r + 1):
-            # if both of the number are in each other's list, we increment the counter
+            # if both of the numbers are in each other's list, we increment the counter
             if j in MapComf[i] and i in MapComf[j]:
                 counter += 1
     
