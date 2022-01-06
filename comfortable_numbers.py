@@ -50,8 +50,8 @@ def solution(l, r):
     for i in range(l, r + 1):
         MapComf[i] = list_comfortable(i)
         
-    # now we loop through the map and see if any number in the list of comfortable is comfortable
-    # with any other number, if so we increment our variable counter
+    # now we loop through the map and see if any number in the list of comfortable numbers
+    # is comfortable with any other number, if so we increment our variable counter
     counter = 0
     for i in range(l, r + 1):
         for j in range (i + 1, r + 1):
