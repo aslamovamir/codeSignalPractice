@@ -31,7 +31,7 @@ def solution(a):
         CandleOppMap[i] = 0
         # print('CYCLE: ', i)
         # now we check if the candle is 1
-        # if so, we increment the values of all the keys of the map ontained so far
+        # if so, we increment the values of all the keys of the map obtained so far
         if a[i] == 1:
             # print('MET ON')
             for j in range(0, i + 1):
