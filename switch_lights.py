@@ -19,7 +19,7 @@
 
 def solution(a):
     # idea is to keep all the changes up to a certain candle in a dictionary, 
-    # with the key as a candle in a certain position and the values aas the number
+    # with the key as a candle in a certain position and the values as the number
     # of total opposites met; if the number of oposites is even, then the candle is
     # in the same state as before, but if it is odd, the oposite state is obtained
     
