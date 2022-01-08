@@ -25,7 +25,6 @@ vector<string> solution(char number) {
         iterator += first;
         iterator += " + ";
         iterator += second;
-        cout<<iterator<<endl;
         answer.push_back(iterator);
         iterator = "";
     }
