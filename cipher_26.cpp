@@ -37,7 +37,6 @@ string solution(string message) {
             encode = (code + 26 - (runner)%26)%26;
             cout<<"ENCODE: "<<encode<<endl;
             runner += encode;
-            cout<<"ENCODE: "<<encode<<endl;
         }
         encoded = 97 + encode;
         cout<<"THE ENCODED CHAR: "<<encoded<<endl;
