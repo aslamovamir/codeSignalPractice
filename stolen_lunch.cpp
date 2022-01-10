@@ -21,16 +21,12 @@ string solution(string note) {
     for (unsigned int i = 0; i < note.length(); i++) {
         if (isdigit(note[i])) {
             run_letter = 97 +(note[i] - '0');
-            //cout<<"RUN LETTER: "<<run_letter<<endl; 
             answer += run_letter;
             continue;
         }
         run_digit = note[i] - 97;
         if (run_digit >= 0 && run_digit <= 9) {
-            // cout<<"CHANGE FROM DIGIT TO LETTER!"<<endl;
-            // cout<<"RUN DIGIT: "<<run_digit<<endl;
             run_letter = '0' + run_digit;
-            // cout<<"RUN LETTER: "<<run_letter<<endl;
             answer += run_letter;
             continue;
         }
