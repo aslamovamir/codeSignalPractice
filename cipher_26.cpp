@@ -25,21 +25,15 @@ string solution(string message) {
     char encoded;
     int code, encode;
     for (unsigned int i = 0; i < message.length(); i++) {
-        cout<<"\n\n\nCYCLE: "<<message[i]<<endl;
-        cout<<"RUNNER: "<<runner<<endl;
         code = message[i] - 97;
-        cout<<"CODE: "<<code<<endl;
         if (i == 0) {
-            cout<<"i is 0!!!"<<endl;
             runner += code;
             encode = runner;
         } else {
             encode = (code + 26 - (runner)%26)%26;
-            cout<<"ENCODE: "<<encode<<endl;
             runner += encode;
         }
         encoded = 97 + encode;
-        cout<<"THE ENCODED CHAR: "<<encoded<<endl;
         answer += encoded;
     }
     
