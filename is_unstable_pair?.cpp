@@ -23,7 +23,6 @@
 
 bool solution(string filename1, string filename2) {
     bool file1_greater;
-    bool file1_greater_case;
     bool too_short = true;
     bool too_short1 = true;
     int shorter = filename1.length() > filename2.length()? filename2.length(): filename1.length();
