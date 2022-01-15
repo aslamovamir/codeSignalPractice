@@ -1,5 +1,5 @@
-# You are watching a volleyball tournament, but you missed the beginning of the very first game of your favorite team. Now you're curious about how the coach 
-# arranged the players on the field at the start of the game.
+# You are watching a volleyball tournament, but you missed the beginning of the very first game of your favorite team. Now you're curious about how the 
+# coach arranged the players on the field at the start of the game.
 
 # The team you favor plays in the following formation:
 
@@ -8,7 +8,8 @@
 # 0 6 0
 # 5 0 1
 # where positive numbers represent positions occupied by players. After the team gains the serve, its members rotate one position in a clockwise direction, 
-# so the player in position 2 moves to position 1, the player in position 3 moves to position 2, and so on, with the player in position 1 moving to position 6.
+# so the player in position 2 moves to position 1, the player in position 3 moves to position 2, and so on, with the player in position 1 moving to position
+# 6.
 
 # Here's how the players change their positions:
 
